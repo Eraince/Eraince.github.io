@@ -656,6 +656,10 @@
 			color: inherit;
 		}
 
+		.contactContent
+		{width:48.93617%;float:left;margin-right:2.12766%}
+		#contact form{width:48.93617%;float:right;margin-right:0}
+
 		.magic-button, a[href$="#magic-button"] {
 				display: inline-block;
 				padding: 8px;
