@@ -97,7 +97,8 @@ function main() {
   //set up scene
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0.4, 0.5, 0.7);
+  // scene.background = new THREE.Color(0.4, 0.5, 0.7);
+  scene.background = new THREE.Color(1, 1, 1);
 
   //add a directional light
 
@@ -194,8 +195,6 @@ function main() {
   var material3 = new THREE.MeshPhongMaterial({
     side: THREE.DoubleSide
   });
-
-  const hue3 = Math.random();
 
   material3.color.setHSL(0.16, 1, 0.5);
 
@@ -414,6 +413,8 @@ function main() {
 
       renderer.render(scene, camera);
     }
+    objects[0].rotation.y += 0.005;
+    objects[0].rotation.x += 0.005;
     requestAnimationFrame(render);
   }
   requestAnimationFrame(render);
